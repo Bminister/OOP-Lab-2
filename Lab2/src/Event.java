@@ -5,11 +5,13 @@ abstract class Event implements Comparable<Event> {
     public String name; //name of the event
     public LocalDateTime dateTime; //the time and date the event starts
 
-    //Constructor
-    public Event(String name,LocalDateTime dateTime) {
-        this.name = name;
-        this.dateTime = dateTime;
-    }
+    //Constructor (Got rid of this to get rid of a bug with my constructors in children classes
+    // public Event(String name,LocalDateTime dateTime) {
+    //    this.name = name;
+    //    this.dateTime = dateTime;
+    //}
+
+
     //Setters and Getters for Variables
     public String getName() {return name;}
     public LocalDateTime getDateTime() {return dateTime;}
